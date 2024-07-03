@@ -9,12 +9,19 @@ return [
     'siteName' => 'TI Components',
     'siteDescription' => 'Bootstrap based components library, powering touraisrael.es',
 
+    'collections' => [
+        'atoms' => [
+            'path' => '/docs/atoms',
+        ],
+        'molecules'
+    ],
+
     // Algolia DocSearch credentials
     'docsearchApiKey' => env('DOCSEARCH_KEY'),
     'docsearchIndexName' => env('DOCSEARCH_INDEX'),
 
     // navigation menu
-    'navigation' => require_once('navigation.php'),
+    'navigation' => require_once ('navigation.php'),
 
     // helpers
     'isActive' => function ($page, $path) {

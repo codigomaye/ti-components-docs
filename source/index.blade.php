@@ -2,33 +2,31 @@
 
 @php
     $benefits = [
-        ['title' => 'Ready to use','description' => 'description'],
-        ['title' => 'Based on Bootstrap', 'description' => 'description'],
-        ['title' => 'Elegant and modern', 'description' => 'description']
+        ['title' => 'Used and tested in real product','description' => 'This component library is used in touraisrael.es, a leading Christian organized travel agency to Israel.'],
+        ['title' => 'Based on Bootstrap', 'description' => 'Components are based on Bootstrap, a solid choice to create solid projects.'],
+        ['title' => 'Conventional and Elegant', 'description' => 'These component have been designed to ensure a beautifull environment, following web design best practices.']
     ]
 @endphp
+
+
 
 @section('body')
 <section class="container">
     <div class="row">
         <div class="col-12 col-lg-6">
-            <h1>{{$page->siteName}}</h1>
-            <p class="lead">{{$page->siteDescription}}</</p>
+            <x-atoms.ti-h1 :title="$page->siteName"/>
+            <p class="lead">{{$page->siteDescription}}</p>
+            <x-molecules.ti-button text="Docs" url="/docs/getting-started/"/>
         </div>
         <div class="col"></div>
     </div>
 </section>
 <section class="container">
-    <h2 class="display-6 fw-medium mb-3">Benefits</h2>
+    <x-atoms.ti-h2 title="Benefits"/>
     <div class="row">
         @foreach ($benefits as $item)
         <div class="col col-lg-4">
-            <div class="card shadow-sm bg-light">
-                <div class="card-body">
-                    <h3 class="card-title fw-light">{{$item['title']}}</h3>
-                    <p class="card-subtitle mb-2">{{$item['description']}}</p>
-                </div>
-            </div>
+            <x-molecules.ti-card :title="$item['title']" :subtitle="$item['description']" variant="auto-size"/>
         </div>
         @endforeach
     </div>
