@@ -1,5 +1,7 @@
-@tailwind base;
-@tailwind components;
+// @tailwind base;
+// @tailwind components;
+
+@import 'bootstrap/scss/bootstrap';
 
 // Code syntax highlighting,
 // powered by https://highlightjs.org
@@ -10,4 +12,4 @@
 @import 'documentation';
 @import 'search';
 
-@tailwind utilities;
+// @tailwind utilities;

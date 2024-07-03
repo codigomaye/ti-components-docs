@@ -14,5 +14,8 @@
         "sass": "^1.32.5",
         "sass-loader": "^10.1.1",
         "tailwindcss": "^1.9.6"
+    },
+    "dependencies": {
+        "bootstrap": "^5.3.3"
     }
 }
