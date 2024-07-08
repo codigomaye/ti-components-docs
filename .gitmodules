@@ -1,6 +1,3 @@
 [submodule "source/_components"]
 	path = source/_components
 	url = https://irikanet-admin@bitbucket.org/ti-components/ti-component-blade.git
-[submodule "source/_assets/sass/ti-components"]
-	path = source/_assets/sass/ti-components
-	url = https://irikanet-admin@bitbucket.org/ti-components/ti-components-sass.git
