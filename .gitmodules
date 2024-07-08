@@ -1,0 +1,3 @@
+[submodule "source/_components"]
+	path = source/_components
+	url = https://bitbucket.org/irikanet/ti-component-blade
