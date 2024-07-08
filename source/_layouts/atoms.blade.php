@@ -8,7 +8,7 @@
     $url = explode('/', $page->getURL());
     $slug = end($url);
     $blade_file = './source/_components/atoms/' . $slug . '.blade.php';
-    $sass_file = './source/_assets/sass/ti-components-sass/atoms/' . $slug . '.scss';
+    $sass_file = './source/_assets/sass/ti-components/atoms/' . $slug . '.scss';
 @endphp
 
 @section('body')
