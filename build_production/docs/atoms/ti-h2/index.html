@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Usado como título de secciones de cada página.">
+
+        <meta property="og:site_name" content="TI Components"/>
+        <meta property="og:title" content="H2 | TI Components"/>
+        <meta property="og:description" content="Usado como título de secciones de cada página."/>
+        <meta property="og:url" content="/docs/atoms/ti-h2"/>
+        <meta property="og:image" content="/assets/img/logo.png"/>
+        <meta property="og:type" content="website"/>
+
+        <meta name="twitter:image:alt" content="TI Components">
+        <meta name="twitter:card" content="summary_large_image">
+
+        
+        <title>TI Components | H2</title>
+
+        <link rel="home" href="">
+        <link rel="icon" href="/favicon.ico">
+
+        
+                    <!-- Insert analytics code here -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=31eaa93f14bf0ed8523ff02ca4c9c786">
+
+            </head>
+
+    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
+        <header class="container-fluid p-3 shadow-sm bg-primary text-white" data-bs-theme="dark">
+            <div class="container">
+                <a href="/" title="TI Components home" class="text-decoration-none text-white">
+                    <img src="/assets/img/logo.svg" alt="TI Components logo" />
+
+                    <p class="d-inline-block ms-2">TI Components</p>
+                </a>
+            </div>
+        </header>
+
+        <main role="main" class="py-5">
+                <section class="container py-5">
+        <div class="row">
+            <div class="col-12 col-lg-3">
+                <nav id="js-nav-menu" class="">
+                    <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Getting Started
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/atoms"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Atoms
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+    </ul>
+                </nav>
+            </div>
+            <div class="col col-lg">
+
+                <h1 class="ti-h1">H2</h1>                <p class="ti-text-lead">Usado como título de secciones de cada página.</p>
+                <section class="container mb-3">
+                    <h2 class="ti-h2">Example</h2>                    <h2 class="ti-h2">This is an Example component</h2>
+                    <hr>
+                </section>
+
+                <section class="container mb-3">
+                    <h2 class="ti-h2">How to invoque</h2>                    <code class="language-php">
+                        &lt;x-atoms.ti-h2 title=&quot;$title&quot; /&gt;
+                        <hr>
+                    </code>
+                </section>
+
+                <section class="container">
+                    <h2 class="ti-h2">Component definition</h2>                    <code class="language-php">
+
+                        @props([
+<br>  &#039;title&#039; =&gt; null,
+<br>])
+<br>&lt;h2 class=&quot;ti-h2&quot;&gt;{{$title}}&lt;/h2&gt;<br>                    </code>
+                    <hr>
+                </section>
+
+                <section class="container">
+                    <h2 class="ti-h2">CSS Class</h2>                    <code class="language-php">
+                        .ti-h2{
+<br>    @extend .display-6;
+<br>    @extend .fw-medium;
+<br>    @extend .mb-3;
+<br>}<br>                    </code>
+                    <hr>
+                </section>
+
+                <section class="container">
+                    <div class="d-flex justify-content-between">
+                                                    <div class="text-end">
+                                <a href="/docs/atoms/ti-h1" class="ti-button ti-button--success">
+        Previous Atom: H1
+</a>
+                            </div>
+                        
+                                                    <div class="text-end">
+                                <a href="/docs/atoms/ti-h3-card" class="ti-button ti-button--success">
+        Next Atom: Card title 3
+</a>
+                            </div>
+                                        </section>
+            </div>
+
+        </div>
+    </section>
+        </main>
+
+        <script src="/assets/build/js/main.js?id=63db05e2f564e9fa280d15202359eed1"></script>
+
+        <script>
+    const navMenu = {
+        toggle() {
+            const menu = document.getElementById('js-nav-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('lg:block');
+            document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
+            document.getElementById('js-nav-menu-show').classList.toggle('hidden');
+        },
+    }
+</script>
+
+        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+            <ul class="flex flex-col md:flex-row justify-center">
+                <li class="md:mr-2">
+                    &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> 2024.
+                </li>
+
+                <li>
+                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
+                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
