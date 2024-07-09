@@ -1,10 +1,12 @@
 <?php
 
+$baseUrl = "https://codigomaye.github.io/ti-components-docs/";
+
 return [
     'Getting Started' => [
-        'url' => 'docs/getting-started',
+        'url' => $baseUrl . '/docs/getting-started',
         'children' => [
-            'Atoms' => 'docs/atoms',
+            'Atoms' => $baseUrl . '/docs/atoms',
         ],
     ],
 ];

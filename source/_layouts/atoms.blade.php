@@ -7,7 +7,7 @@
 @php
     $url = explode('/', $page->getURL());
     $slug = end($url);
-    $blade_file = $page->baseUrl . '/source/_components/atoms/' . $slug . '.blade.php';
+    $blade_file = '/source/_components/atoms/' . $slug . '.blade.php';
     $sass_file =  $page->baseUrl . '/source/_assets/sass/ti-components/atoms/' . $slug . '.scss';
 @endphp
 
