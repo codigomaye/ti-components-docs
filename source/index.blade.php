@@ -22,7 +22,7 @@
     </div>
 </section>
 <section class="container">
-    <x-atoms.ti-h2 title="Benefits"/>
+    <x-atoms.ti-h3-card title="Benefits"/>
     <div class="row">
         @foreach ($benefits as $item)
         <div class="col col-lg-4">
