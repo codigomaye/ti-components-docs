@@ -2,8 +2,9 @@
 	path = source/_components
 	url = git@bitbucket.org:ti-components/ti-components-sass.git
 	branch = main
-	update = rebase
+	update = merge
 [submodule "source/_assets/sass/ti-components"]
 	path = source/_assets/sass/ti-components
 	url = git@bitbucket.org:ti-components/ti-components-sass.git
 	branch = main
+	update = merge
