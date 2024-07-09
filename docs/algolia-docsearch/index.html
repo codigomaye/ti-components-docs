@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Configure Algolia DocSearch with the Jigsaw docs starter template">
+
+        <meta property="og:site_name" content="TI Components"/>
+        <meta property="og:title" content="Algolia DocSearch | TI Components"/>
+        <meta property="og:description" content="Configure Algolia DocSearch with the Jigsaw docs starter template"/>
+        <meta property="og:url" content="/docs/algolia-docsearch"/>
+        <meta property="og:image" content="/assets/img/logo.png"/>
+        <meta property="og:type" content="website"/>
+
+        <meta name="twitter:image:alt" content="TI Components">
+        <meta name="twitter:card" content="summary_large_image">
+
+        
+        <title>TI Components | Algolia DocSearch</title>
+
+        <link rel="home" href="">
+        <link rel="icon" href="/favicon.ico">
+
+        
+                    <!-- Insert analytics code here -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=31eaa93f14bf0ed8523ff02ca4c9c786">
+
+            </head>
+
+    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
+        <header class="container-fluid p-3 shadow-sm bg-primary text-white" data-bs-theme="dark">
+            <div class="container">
+                <a href="/" title="TI Components home" class="text-decoration-none text-white">
+                    <img src="/assets/img/logo.svg" alt="TI Components logo" />
+
+                    <p class="d-inline-block ms-2">TI Components</p>
+                </a>
+            </div>
+        </header>
+
+        <main role="main" class="py-5">
+                <section class="container py-5">
+        <div class="row">
+            <div class="col-12 col-lg-3">
+                <nav id="js-nav-menu" class="">
+                    <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Getting Started
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/atoms"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Atoms
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+    </ul>
+                </nav>
+            </div>
+            <div class="col col-lg">
+                <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" >
+                    <h1 class="ti-h1">Algolia DocSearch</h1>                    <p class="ti-text-lead">Configure Algolia DocSearch with the Jigsaw docs starter template</p>                    <h1 id="algolia-docsearch">Algolia DocSearch</h1>
+
+<p>This starter template includes support for <a href="https://community.algolia.com/docsearch/">DocSearch</a>, a documentation indexing and search tool provided by Algolia for free. To configure this tool, you’ll need to sign up with Algolia and set your API Key and index name in <code>config.php</code>. Algolia will then crawl your documentation regularly, and index all your content.</p>
+
+<p><a href="https://community.algolia.com/docsearch/#join-docsearch-program">Get your DocSearch credentials here.</a></p>
+
+<pre><code class="language-php">// config.php
+return [
+    'docsearchApiKey' =&gt; '',
+    'docsearchIndexName' =&gt; '',
+];
+</code></pre>
+
+<p>Once the <code>docsearchApiKey</code> and <code>docsearchIndexName</code> values are set in <code>config.php</code>, the search field at the top of the page is ready to use.</p>
+
+<p><img class="block m-auto" src="/assets/img/docsearch.png" alt="Screenshot of search results" /></p>
+
+<p>To help Algolia index your pages correctly, it's good practice to add a unique <code>id</code> or <code>name</code> attribute to each heading tag (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc.). By doing so, a user will be taken directly to the appropriate section of the page when they click a search result.</p>
+
+<hr />
+
+<h2 id="algolia-adding-custom-styles">Adding Custom Styles</h2>
+
+<p>If you'd like to customize the styling of the search results, Algolia exposes custom CSS classes that you can modify:</p>
+
+<pre><code class="language-css">/* Main dropdown wrapper */
+.algolia-autocomplete .ds-dropdown-menu {
+  width: 500px;
+}
+
+/* Main category (eg. Getting Started) */
+.algolia-autocomplete .algolia-docsearch-suggestion--category-header {
+  color: darkgray;
+  border: 1px solid gray;
+}
+
+/* Category (eg. Downloads) */
+.algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column {
+  color: gray;
+}
+
+/* Title (eg. Bootstrap CDN) */
+.algolia-autocomplete .algolia-docsearch-suggestion--title {
+  font-weight: bold;
+  color: black;
+}
+
+/* Description description (eg. Bootstrap currently works...) */
+.algolia-autocomplete .algolia-docsearch-suggestion--text {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+/* Highlighted text */
+.algolia-autocomplete .algolia-docsearch-suggestion--highlight {
+  color: blue;
+}
+</code></pre>
+
+<hr />
+
+<p>For more details, visit the <a href="https://community.algolia.com/docsearch/what-is-docsearch.html">official Algolia DocSearch documentation.</a></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+        </main>
+
+        <script src="/assets/build/js/main.js?id=63db05e2f564e9fa280d15202359eed1"></script>
+
+        <script>
+    const navMenu = {
+        toggle() {
+            const menu = document.getElementById('js-nav-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('lg:block');
+            document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
+            document.getElementById('js-nav-menu-show').classList.toggle('hidden');
+        },
+    }
+</script>
+
+        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+            <ul class="flex flex-col md:flex-row justify-center">
+                <li class="md:mr-2">
+                    &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> 2024.
+                </li>
+
+                <li>
+                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
+                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
