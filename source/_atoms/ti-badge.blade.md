@@ -1,10 +1,10 @@
 ---
-title: Primary Badge
-description: Badge with Primary Color
+title: Badge
+description: Badge element
 extends: _layouts.atoms
 invoque: '<x-atoms.ti-badge text="$text" />'
 section: content
 
 ---
-<x-atoms.ti-badge title="This is an Example component" />
+<x-atoms.ti-badge text="This is an Example component" />
 

@@ -1,6 +1,6 @@
 [submodule "source/_assets/sass/ti-components"]
 	path = source/_assets/sass/ti-components
-	url = git@bitbucket.org:ti-components/ti-components-sass.git
+	url = git@github.com:codigomaye/ti-sass-components.git
 	branch = main
 	update = merge
 [submodule "TI-Blade-Components"]
