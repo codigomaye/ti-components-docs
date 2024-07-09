@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'https://codigomaye.github.io/ti-components-docs',
     'production' => true,
     'staging' => false,
 

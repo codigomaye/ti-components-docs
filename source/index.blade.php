@@ -16,7 +16,7 @@
         <div class="col-12 col-lg-6">
             <x-atoms.ti-h1 :title="$page->siteName"/>
             <p class="lead">{{$page->siteDescription}}</p>
-            <x-molecules.ti-button text="Docs" url="/docs/getting-started/"/>
+            <x-molecules.ti-button text="Docs" url="docs/getting-started/"/>
         </div>
         <div class="col"></div>
     </div>
