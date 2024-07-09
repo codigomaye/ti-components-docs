@@ -1,6 +1,9 @@
 [submodule "source/_components"]
 	path = source/_components
-	url = https://bitbucket.org/ti-components/ti-component-blade/
+	url = git@bitbucket.org:ti-components/ti-components-sass.git
+	branch = main
+	update = rebase
 [submodule "source/_assets/sass/ti-components"]
 	path = source/_assets/sass/ti-components
-	url = https://bitbucket.org/ti-components/ti-components-sass/
+	url = git@bitbucket.org:ti-components/ti-components-sass.git
+	branch = main
