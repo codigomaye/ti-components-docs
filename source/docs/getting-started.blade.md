@@ -5,9 +5,9 @@ extends: _layouts.documentation
 author: david.maye
 section: content
 links:
-    - ['Atoms', 'Smallest elemtents of the framework', '/docs/atoms']
-    - ['Molecules', 'Group of atoms', '/docs/molecules']
-    - ['Organisms', 'Group of molecules', '/docs/organisms']
+    - ['Atoms', 'Smallest elemtents of the framework', '/docs/atoms/']
+    - ['Molecules', 'Group of atoms', '/docs/molecules/']
+    - ['Organisms', 'Group of molecules', '/docs/organisms/']
 ---
 
 Click on the component type you want to know more about
