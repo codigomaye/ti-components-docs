@@ -5,5 +5,5 @@
 	update = merge
 [submodule "TI-Blade-Components"]
 	path = source/_components
-	url = git@bitbucket.org:ti-components/ti-component-blade.git
+	url = git@github.com:codigomaye/ti-blade-components.git
 	branch = main
